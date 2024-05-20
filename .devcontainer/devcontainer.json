@@ -1,7 +1,7 @@
 {
-  "name": "Ngrok",
+  "name": "My Codespace",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "./.devcontainer/ngrok.sh"
+  "postStartCommand": "/bin/bash -c './ngrok.sh'"
 }

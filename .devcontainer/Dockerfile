@@ -6,3 +6,9 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     && rm -rf /var/lib/apt/lists/*
+
+# Copy the startup script into the container
+COPY ngrok.sh /ngrok.sh
+
+# Make sure the startup script is executable
+RUN chmod +x /ngrok.sh
