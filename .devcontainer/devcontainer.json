@@ -1,0 +1,7 @@
+{
+  "name": "Ngrok",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "./.devcontainer/ngrok.sh"
+}
